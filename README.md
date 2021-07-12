@@ -32,9 +32,9 @@ o en su caso saber antes de probar por primera vez su tarjeta en linea.
 
 ## 3. Prototipo final
 
-![Screenshot](principal.png)
-![Screenshot](noValido.png)
-![Screenshot](valido.png)
+![Screenshot](./principal.png)
+![Screenshot](./noValido.png)
+![Screenshot](./valido.png)
 
 ## 4. Uso de la página
 
