@@ -53,7 +53,7 @@ const myFunction = (event) => {
         
         console.log("es numero");
         numeroTarjeta = numeroTarjeta.replaceAll(" ", "");
-        let numeroDigitos = numeroTarjeta.length;
+        const numeroDigitos = numeroTarjeta.length;
        
 
         let sustituirDigito="X".repeat(numeroDigitos);

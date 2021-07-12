@@ -16,17 +16,12 @@ const validator = {
       
       if (i % 2 === 0) {
         totalPares = valor * 2;
-        
         if (totalPares >= 10){
           totalPares -= 9;
         }
-        totalSuma += totalPares;
-        
-      } else{
-        totalSuma += valor;
-        
+        valor= totalPares;
       } 
-      
+      totalSuma += valor;
     }
     
     if(totalSuma % 10 === 0){
