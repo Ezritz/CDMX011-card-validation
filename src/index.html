@@ -6,9 +6,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <!--<input type="text" placeholder="Ingresa tu nombre" id="nombre" class="usuario_nombre">-->
+    </header>
+    
+    
+    <div class="contenedor" id= "principal">
+      <h2 id="subtitulo">Realizar Pago</h2> 
+      <p id= "retro"></p>
+      <div class="elemento">
+        
+        <label for = "cardNumber" id="numTarjeta"> Numero de Tarjeta: </label> 
+        <img src="img/logo-americanEx.png" alt="American Express" id="amex" hidden="true"/>
+        <img src="img/logo-mastercard.png" alt="Mastercard" id="mastercard" hidden="true"/>
+        <img src="img/logo-visa.png"  id="visa" hidden="true" />
+        <input type ="text" id="creditCardNumber" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required="true" onkeyup="myFunction(event)" autocomplete="off" 
+        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" /> 
+        <label id="cardMaskedTrue" hidden="true"></label> 
+        <p id="signoValido" hidden="true"><ion-icon name="checkmark-circle-outline" class="valido_btn"></ion-icon></p> 
+        <label id="cardMaskedFalse" hidden="true"></label>
+        <p id="signoInvalido" hidden="true"><ion-icon name="close-circle-outline" class="invalido_btn"></ion-icon></p> 
+        
+      </div>
+      <div >
+        <input class="botones" type="submit"  id="validar" value="Validar" />
+        <input type="submit" value="Actualizar" id="actualizar" hidden= "true"/>
+      </div>
+          
+      
+    </div>
+   
+    
+    
     <main></main>
     <footer></footer>
     <script src="index.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </body>
 </html>

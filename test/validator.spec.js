@@ -11,6 +11,9 @@ describe('validator', () => {
       expect(typeof validator.isValid).toBe('function');
     });
 
+    it('debería retornar true para "5579070090893929"', () => {
+      expect(validator.isValid('5579070090893929')).toBe(true);
+    });
     it('debería retornar true para "4083952015263"', () => {
       expect(validator.isValid('4083952015263')).toBe(true);
     });
@@ -39,6 +42,39 @@ describe('validator', () => {
 
     it('Debería retornar "######orld" para "helloworld"', () => {
       expect(validator.maskify('helloworld')).toBe('######orld');
+    });
+  });
+
+  describe('validator.getIssuer', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.getIssuer).toBe('function');
+    });
+    it('Debería retornar "visa" para "4"', () => {
+      expect(validator.getIssuer('4')).toBe('visa');
+    });
+    it('Debería retornar "mastercad" para "51"', () => {
+      expect(validator.getIssuer('51')).toBe('mastercard');
+    });
+    it('Debería retornar "mastercad" para "52"', () => {
+      expect(validator.getIssuer('52')).toBe('mastercard');
+    });
+    it('Debería retornar "mastercad" para "53"', () => {
+      expect(validator.getIssuer('53')).toBe('mastercard');
+    });
+    it('Debería retornar "mastercad" para "54"', () => {
+      expect(validator.getIssuer('54')).toBe('mastercard');
+    });
+    it('Debería retornar "mastercad" para "55"', () => {
+      expect(validator.getIssuer('55')).toBe('mastercard');
+    });
+    it('Debería retornar "amex" para "34"', () => {
+      expect(validator.getIssuer('34')).toBe('amex');
+    });
+    it('Debería retornar "amex" para "37"', () => {
+      expect(validator.getIssuer('37')).toBe('amex');
+    });
+    it('Debería retornar "" para ""', () => {
+      expect(validator.getIssuer('')).toBe('');
     });
   });
 });
