@@ -5,7 +5,8 @@
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Prototipo Final](#3-prototipo-final)
-* [4. Uso de la pagina](#4-uso-de-la-pagina)
+* [4. Prototipo de baja fidelidad](#4-prototipo-de-baja-fidelidad)
+* [5. Uso de la pagina](#5-uso-de-la-pagina)
 
 ***
 
@@ -36,7 +37,11 @@ o en su caso saber antes de probar por primera vez su tarjeta en linea.
 ![Screenshot](./noValido.png)
 ![Screenshot](./valido.png)
 
-## 4. Uso de la página
+## 4. Prototipo de baja fidelidad
+![Screenshot](./prototipo-1.png)
+![Screenshot](./prototipo-2.png)
+
+## 5. Uso de la página
 
 Debido al incremento de creación de tarjetas digitales, es necesario
 implementar un metodo que permita validar los numeros de tarjetas que se han generado,

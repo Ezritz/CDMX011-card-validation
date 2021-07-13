@@ -7,15 +7,14 @@
   </head>
   <body>
     <header>
-      <!--<input type="text" placeholder="Ingresa tu nombre" id="nombre" class="usuario_nombre">-->
+      <p>Validador de tarjetas de Credito/Debito</p>
+      <p>Validador de tarjeta de crédito es una herramienta en línea para validar los detalles de la tarjeta de crédito y/o débito</p>
     </header>
-    
-    
+    <main>
     <div class="contenedor" id= "principal">
-      <h2 id="subtitulo">Realizar Pago</h2> 
+      <h2 id="subtitulo">Valida tu tarjeta</h2> 
       <p id= "retro"></p>
       <div class="elemento">
-        
         <label for = "cardNumber" id="numTarjeta"> Numero de Tarjeta: </label> 
         <img src="img/logo-americanEx.png" alt="American Express" id="amex" hidden="true"/>
         <img src="img/logo-mastercard.png" alt="Mastercard" id="mastercard" hidden="true"/>
@@ -26,20 +25,18 @@
         <p id="signoValido" hidden="true"><ion-icon name="checkmark-circle-outline" class="valido_btn"></ion-icon></p> 
         <label id="cardMaskedFalse" hidden="true"></label>
         <p id="signoInvalido" hidden="true"><ion-icon name="close-circle-outline" class="invalido_btn"></ion-icon></p> 
-        
       </div>
       <div >
         <input class="botones" type="submit"  id="validar" value="Validar" />
         <input type="submit" value="Actualizar" id="actualizar" hidden= "true"/>
       </div>
           
-      
     </div>
    
-    
-    
-    <main></main>
-    <footer></footer>
+    </main>
+    <footer>
+      <p>No compartas con nadie tu información bancaria, esta página no almacena la información de tu tarjeta</p>
+    </footer>
     <script src="index.js" type="module"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </body>
