@@ -33,9 +33,7 @@ o en su caso saber antes de probar por primera vez su tarjeta en linea.
 
 ## 3. Prototipo final
 
-![Screenshot](./principal.png)
-![Screenshot](./noValido.png)
-![Screenshot](./valido.png)
+![Screenshot](./proto-final.png)
 
 ## 4. Prototipo de baja fidelidad
 ![Screenshot](./prototipo-1.png)
